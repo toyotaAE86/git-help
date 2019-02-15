@@ -1,0 +1,2 @@
+1、检验是否安装git: git
+2、将本地目录变成git仓库：git init
