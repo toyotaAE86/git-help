@@ -14,4 +14,4 @@
 13、跟踪修改：每次修改，如果不用git add到暂存区，那就不会加入到commit中。
 14、撤消修改：(1)如果没有添加到暂存区：git checkout -- 文件名
               (2)如果已经添加到暂存区：首先 git reset HEAD 文件名 然后 git checkout -- 文件名
-
+15、
