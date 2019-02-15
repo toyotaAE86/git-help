@@ -3,4 +3,13 @@
 3、添加文件：git add <file>
 4、提交文件到仓库并且添加说明：git commit -m <message>
 5、查看git仓库的数据变化：git status
+6、往回查看版本日志：git log
+7、往未来查看版本日志：git reflog
+8、回退到某个一个版本：git reset --hard <版本号>
+9、往后回退到上一个版本：git reset --hard HARD^ 
+9、往后回退到上上一个版本：git reset --hard HARD^^ 依此类推
+10、暂存区： 用git add把文件添加进去，实际上就是把文件修改添加到暂存区
+11、用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支
+12、工作区：.git文件夹的上一级文件夹
+
 
