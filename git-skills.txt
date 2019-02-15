@@ -1,2 +1,6 @@
-1、检验是否安装git: git
+﻿1、检验是否安装git: git
 2、将本地目录变成git仓库：git init
+3、添加文件：git add <file>
+4、提交文件到仓库并且添加说明：git commit -m <message>
+5、查看git仓库的数据变化：git status
+
