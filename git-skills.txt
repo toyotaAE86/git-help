@@ -1,26 +1,52 @@
 ﻿1、检验是否安装git: git
+
 2、将本地目录变成git仓库：git init
+
 3、添加文件：git add <file>
+
 4、提交文件到仓库并且添加说明：git commit -m <message>
+
 5、查看git仓库的数据变化：git status
+
 6、往回查看版本日志：git log
+
 7、往未来查看版本日志：git reflog
+
 8、回退到某个一个版本：git reset --hard <版本号>
+
 9、往后回退到上一个版本：git reset --hard HARD^ 
-9、往后回退到上上一个版本：git reset --hard HARD^^ 依此类推
-10、暂存区： 用git add把文件添加进去，实际上就是把文件修改添加到暂存区
-11、用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支
-12、工作区：.git文件夹的上一级文件夹
-13、跟踪修改：每次修改，如果不用git add到暂存区，那就不会加入到commit中。
-14、撤消修改：(1)如果没有添加到暂存区：git checkout -- 文件名
+
+10、往后回退到上上一个版本：git reset --hard HARD^^ 依此类推
+
+11、暂存区： 用git add把文件添加进去，实际上就是把文件修改添加到暂存区
+
+12、用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支
+
+13、工作区：.git文件夹的上一级文件夹
+
+14、跟踪修改：每次修改，如果不用git add到暂存区，那就不会加入到commit中。
+
+15、撤消修改：(1)如果没有添加到暂存区：git checkout -- 文件名
               (2)如果已经添加到暂存区：首先 git reset HEAD 文件名 然后 git checkout -- 文件名
-15、删除文件：git rm <file>  git commit -m <message>
+			  
+16、删除文件：git rm <file>  git commit -m <message>
     如果工作区文件误删：git checkout -- <file>
     如果仓库文件误删：git checkout HEAD -- <file>
-16、使用github当作远程仓库
+	
+17、使用github当作远程仓库
 	(1)创建公钥 ssh-keygen -t rsa -C <email>
 	(2)将本地仓库关联远程库 git remote add origin git@github.com:toyotaAE86/git-help.git
 	(3)推送本地数据到远程 git push -u origin master
-17、创建一个新的分支 git branch <分支名>
+	
+18、查看分支：git branch
 
+    创建分支：git branch <name>
+
+	切换分支：git checkout <name>
+
+	创建+切换分支：git checkout -b <name>
+
+	合并某分支到当前分支：git merge <name>
+
+	删除分支：git branch -d <name>
 
