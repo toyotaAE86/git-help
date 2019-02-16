@@ -16,4 +16,5 @@
               (2)如果已经添加到暂存区：首先 git reset HEAD 文件名 然后 git checkout -- 文件名
 15、删除文件：git rm <file>  git commit -m <message>
     如果工作区文件误删：git checkout -- <file>
-	
+    如果仓库文件误删：git checkout HEAD -- <file>
+16、创建SSH Key	
