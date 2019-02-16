@@ -17,4 +17,8 @@
 15、删除文件：git rm <file>  git commit -m <message>
     如果工作区文件误删：git checkout -- <file>
     如果仓库文件误删：git checkout HEAD -- <file>
-16、创建SSH Key	
+16、使用github当作远程仓库
+	(1)创建公钥 ssh-keygen -t rsa -C <email>
+	(2)将本地仓库关联远程库 git remote add origin git@github.com:toyotaAE86/git-help.git
+	(3)推送本地数据到远程 git push -u origin master
+
