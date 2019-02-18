@@ -51,3 +51,4 @@
     删除分支：git branch -d <name>
 
 19、合并分支并且禁用Fast forward：  git merge --no-ff -m "merge with no-ff" dev
+20、储藏工作现场：git stash
