@@ -37,6 +37,7 @@
 	(1)创建公钥 ssh-keygen -t rsa -C <email>
 	(2)将本地仓库关联远程库 git remote add origin git@github.com:toyotaAE86/git-help.git
 	(3)推送本地数据到远程 git push -u origin master
+	   将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用git push了
 	
 18、查看分支：git branch
 
