@@ -82,3 +82,9 @@
     命令git tag -d <tagname>可以删除一个本地标签；
 
     命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
+24、删除远程目录或者文件 而保留本地
+    git rm -r --cached <目录或者文件>
+    git commit -m <msg>
+    git push
+25、第一次抓取远程仓库中的代码，由于仓库中已经存在代码
+    git pull --rebase origin master
